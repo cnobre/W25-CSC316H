@@ -3,15 +3,12 @@ layout: labold
 exclude: true
 ---
 -->
-<img src="cs171-logo.png" width="200">
 
 &nbsp;
 
-# Homework 1 - Due Monday, Sept. 9, 2024 by noon EDT
+# Homework 1 - Due Tuesday, January 14, 2025 by noon EDT
 
 In this homework, you will consider different visualizations and analyze their primary purpose, whether they succeed or not, and the critical aspects of what makes visualizations compelling, effective, and impactful.
-
-If you have not done so already, please also take the introductory class survey on Canvas, [here](https://canvas.harvard.edu/courses/123364/modules/items/1407007)
 
 &nbsp;
 
@@ -85,15 +82,15 @@ The Excel file “SuperDrugsPrescriptionsV2.xlsx”, linked [here](https://bit.l
 
 ## Lab Reading & Quiz Reminder
 
-Don't forget to complete the lab pre-reading and pre-quiz before each lab, they are part of the homework instructions on Canvas. Instructions for the lab will be posted on Canvas in the *Week 2* module, but we will explain all about the lab next Monday.
+Don't forget to complete the lab pre-reading and pre-quiz before each lab, they are part of the homework instructions on Quercus. Instructions for the lab will be posted on Quercus in the *Week 2* module, but we will explain all about the lab next Tuesday.
 
 
-## 4. Submit Homework on Canvas
+## 4. Submit Homework on Quercus
 
 You can use a Google doc to answer the HW questions. Include the screenshots of your visualizations (Q1) in the document. You can then create a PDF file from your Google doc by either using "File -> Download -> pdf "or "File -> Print "and selecting "Save as PDF "in the destination drop down.
 
 **Name your PDF file appropriately (e.g., hw1) and include your name.** Add your name to the filename using CamelCase style, e.g., ```hw1_JohnDoe.pdf``` if your name is John Doe.
 
-**Go to Canvas and click on the HW Part 1 - Submission link in the *Week 1* module and upload your PDF**
+**Go to Quercus and click on the HW Part 1 - Submission link in the *Week 1* module and upload your PDF**
 
-**Congratulations on finishing Homework 1! Remember that weekly HW will always be due on Monday.**
+**Congratulations on finishing Homework 1! Remember that weekly HW will always be due on Tuesday.**
