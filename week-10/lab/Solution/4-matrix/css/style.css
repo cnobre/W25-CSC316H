@@ -1,0 +1,16 @@
+
+body {
+	padding: 40px;
+}
+
+.matrix-label {
+	font-size: 10px;
+}
+
+path {
+	shape-rendering: crispedges;
+}
+
+#select-order-type {
+	width: 200px;
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>D3 Project</title>
+</head>
+<body>
+
+		<h1>CS171 - Lab 3 - Activity II</h1>
+
+		<!-- Load D3 Library -->
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+
+		<script>
+
+
+			// Dataset
+			let numericData = [1, 2, 4, 8, 16];
+
+			// Dataset
+			let sandwiches = [
+				{ name: "Thesis", price: 7.95, size: "large"},
+				{ name: "Dissertation", price: 8.95, size: "large"},
+				{ name: "Highlander", price: 6.50, size: "small"},
+				{ name: "Just Tuna", price: 6.50, size: "small"},
+				{ name: "So-La", price: 7.95, size: "large"},
+				{ name: "Special", price: 12.50, size: "small"}
+			];
+
+			// 1) ADD SVG ELEMENT (DRAWING SPACE)
+			let svg = d3.select("body").append("svg")
+					.attr("width", 500)
+					.attr("height", 500);
+
+			// 2) DRAW CIRCLES + 3) SET DYNAMIC PROPERTIES
+			svg.selectAll("circle")
+					.data(sandwiches)
+				.enter().append("circle")
+					.attr("stroke", "black") // Adds a thin border to every circle
+					.attr("fill", d => {
+						// Access the 'price' property of the object and check if it is lower than 7 USD
+						if(d.price < 7)
+							return "green";
+						else
+							return "yellow";
+					})
+					.attr("r", d => {
+						// Access the 'size' property of the object and check if the value is 'large' or 'small'
+						if(d.size === "large")
+							return 25;
+						else
+							return 15;
+					})
+					.attr("cy", 30)
+					.attr("cx", (d, index) =>  30 + index * 60 ) // Create a dynamic 'cx' property by shifting every newly created element on the x-axis);
+		</script>
+
+</body>
+</html>

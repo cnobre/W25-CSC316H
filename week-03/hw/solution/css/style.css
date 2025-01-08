@@ -1,0 +1,91 @@
+
+/*****************/
+/*     GENERAL   */
+/*****************/
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 52px;
+  padding: 10px 15px;
+  color: #4A4E69;
+  display: inline-block;
+}
+
+h2 {
+  font-weight: 400;
+  font-size: 24px;
+  margin-bottom: 20px;
+  line-height: 1.4;
+}
+
+.wrapper {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+#header {
+  height: 15vh;
+  border-bottom: thin dashed grey;
+  background: #9a8c98
+}
+
+#main {
+  background: #f2e9e4;
+  height: 75vh;
+}
+
+#chart-area {
+  margin-top: 30px;
+}
+
+
+/*****************/
+/* BUILDING-CARD */
+/*****************/
+
+#building-card {
+  display: none;
+  border-left: 2px dashed #BBB2A6;
+  padding-bottom: 40px;
+}
+#building-card #building-image img {
+  border: 1px solid #4A4E69;
+  height: 30vh;
+  margin: 15px 0;
+}
+#building-card .table>tbody>tr>td {
+  border-color: #CEC1B1;
+}
+#building-card .table>tbody>tr>td:nth-child(2) {
+  font-weight: 500;
+}
+
+
+/*****************/
+/*    BAR-CHART  */
+/*****************/
+
+#chart-area text {
+  font-size: 11px;
+  text-anchor: end;
+}
+
+#chart-area text.building-height {
+  fill: #DDDDE8;
+}
+#chart-area text.building-name {
+  cursor: pointer;
+}
+
+#chart-area .bar {
+  fill: #4A4E69;
+  cursor: pointer;
+}
+#chart-area .bar:hover {
+  fill: #22223B;
+  cursor: pointer;
+}

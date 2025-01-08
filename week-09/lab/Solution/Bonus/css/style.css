@@ -1,0 +1,70 @@
+
+
+body {
+	font-family: 'Neuton', serif;
+}
+
+h1 {
+	font-size: 36px;
+	color: #825a5a;
+	margin-top: 40px;
+}
+
+h2 {
+	color: #94a97a;
+	font-size: 24px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.axis line,
+.axis path {
+  fill: none;
+  stroke: #555;
+  shape-rendering: crispEdges;
+}
+
+.tick text {
+	font-family: sans-serif;
+	font-size: 11px;
+	fill: #555;
+}
+
+#priovis .x-axis text {
+	font-weight: 600;
+}
+
+.area {
+	fill: #825a5a;
+}
+
+.area.area-age {
+	fill: #94a97a;
+}
+
+.bar {
+	fill: #93bebf;
+}
+
+.time-period-value {
+	padding: 4px 10px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+  font-size: 16px;
+}
+.time-period-divider {
+	font-size: 16px;
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#reset-zoom {
+	display: none;
+	margin-left: 15px;
+	font-size: 16px;
+	padding: 4px 10px;
+	display: inline-block;
+	line-height: 1.1;
+	vertical-align: top;
+	margin-top: -2px;
+}

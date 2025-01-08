@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>CS171 - HW2</title>
+
+		<!-- Load CSS libraries -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+		<link rel="stylesheet" href="css/style.css">
+
+		<!-- GOOGLE FONTS -->
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,500,400italic,300italic' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+
+	<div class="container content-wrapper">
+
+		<div class="row">
+			<div class="col-md-3">
+				<img src="img/PizzaWorld-Logo.png" />
+			</div>
+			<div class="col-md-9">
+				<h1>PizzaWorld. <span class="sub-h1">Insights and Statistics.</span></h1>
+				<p class="source-date">Time period: January 25th - 31th 2016</p>
+			</div>
+		</div>
+
+		<div class="row">
+
+			<!-- KEY FIGURES -->
+			<div class="col-md-4 stats-tables">
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Pizza Deliveries <span class="badge" id="stats-deliveries"></span></h3>
+						<table class="table">
+							<tr><td>Number of pizzas:</td><td><span class="stats-value" id="stats-pizzas"></span></td></tr>
+							<tr><td>Average delivery time:</td><td><span class="stats-value" id="stats-delivery-time"></span></td></tr>
+							<tr><td>Total sales:</td><td><span class="stats-value" id="stats-total-sales"></span></td></tr>
+						</table>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<h3>Customer Feedback <span class="badge" id="stats-feedback-messages">4</span></h3>
+						<table class="table">
+							<tr><td>Low quality:</td><td><span class="stats-value" id="stats-low-quality"></span></td></tr>
+							<tr><td>Medium quality:</td><td><span class="stats-value" id="stats-medium-quality"></span></td></tr>
+							<tr><td>High quality:</td><td><span class="stats-value" id="stats-high-quality"></span></td></tr>
+						</table>
+					</div>
+				</div>
+			</div>
+
+			<!-- BAR CHART -->
+			<div class="col-md-7 col-md-push-1" style="position: relative">
+
+				<!-- FILTER-CONTAINER -->
+				<div class="row justify-content-center">
+					<div class="user-control align-self-center">
+
+						<!-- FILTER: AREA -->
+						<select id="select-area" class="form-control" onchange="createVisualization()">
+							<option value="all">All Areas</option>
+							<option value="Boston">Boston</option>
+							<option value="Cambridge">Cambridge</option>
+							<option value="Somerville">Somerville</option>
+						</select>
+
+						<!-- FILTER: ORDER-TYPE -->
+						<select id="select-order-type" class="form-control" onchange="createVisualization()">
+							<option value="all">All Order Types</option>
+							<option value="web">Web</option>
+							<option value="phone">Phone</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="row" id="chart-area"></div>
+
+				<!-- TOOLTIP -->
+				<div id="tooltip" class="hidden">
+					<p><strong>Deliveries</strong></p>
+					<p><span id="value">100</span></p>
+				</div>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-md-12">
+				<table class="table sortable" id="feedback-table">
+				  <thead>
+				  	<tr>
+				  		<th>ID</th>
+				  		<th>Area</th>
+				  		<th>Time [min]</th>
+				  		<th>Driver</th>
+				  		<th>Number of pizzas</th>
+				  		<th>Punctuality</th>
+				  		<th>Quality</th>
+				  		<th>Wrong Pizza</th>
+				  	</tr>
+				  </thead>
+				  <tbody></tbody>
+				</table>
+			</div>
+		</div>
+
+	</div>
+
+
+	<!-- embedding JS libraries -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+
+	<!-- d3 -->
+	<script src="https://d3js.org/d3.v7.min.js"></script>
+
+	<!-- data -->
+	<script src="data/delivery-data.js"></script>
+	<script src="data/feedback-data.js"></script>
+
+	<!-- bar chart -->
+	<script src="js/barchart.js"></script>
+
+	<!-- Bonus: sortable table -->
+	<script src="js/sorttable.js"></script>
+
+	<!-- Filter, worklfow management -->
+	<script src="js/main.js"></script>
+	</body>
+</html>

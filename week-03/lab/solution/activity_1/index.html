@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+		<meta charset="UTF-8">
+		<title>D3 Project</title>
+</head>
+<body>
+
+		<h1>CS171 - Lab 3 - Activity I</h1>
+
+
+		<!-- 3) SVG RECTANGLE -->
+		<svg width="400" height="200" style="background: black">
+
+			<!-- Rectangle (x and y specify the coordinates of the upper-left corner -->
+			<rect x="100" y="50" width="200" height="100" fill="#F5F5DCFF"/>
+
+			<!-- Circle: cx and cy specify the coordinates of the center and r the radius -->
+			<circle cx="200" cy="100" r="20" fill="blue" />
+		</svg>
+
+		<!-- 1+2) LOAD D3 LIBRARY (MINIMIZED VERSION FROM http://d3js.org -->
+		<script src="https://d3js.org/d3.v7.min.js"></script>
+
+		<!-- 4) APPEND A DIV-CONTAINER WITH D3 - STUDENTS ARE ASKED TO DO THIS IN A SEPARATE JS FILE-->
+		<script>
+			d3.select("body")
+				.append("div")
+				.text("Blue Circle on Beige Canvas in Dark Room");
+		</script>
+
+</body>
+</html>

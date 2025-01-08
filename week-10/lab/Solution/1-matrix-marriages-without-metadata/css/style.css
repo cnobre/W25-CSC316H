@@ -1,0 +1,12 @@
+
+body {
+	padding: 40px;
+}
+
+.matrix-label {
+	font-size: 10px;
+}
+
+#select-order-type {
+	width: 200px;
+}
