@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CS171 - HW Week 08</title>
+
+    <!-- CSS libraries -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body style="padding: 1vh">
+<div class="container-fluid" style="height: 98vh; border: thin solid lightsteelblue; border-radius: 5px">
+
+    <!-- header row -->
+    <div class="row" style="height: 10vh; background: lightsteelblue">
+        <div class="col text-center d-flex justify-content-center align-items-center">
+            <h2>Pre-Attentive Processing: Visual Attributes Experiment</h2>
+        </div>
+    </div>
+
+    <!-- configs row -->
+    <div class="row" style="height: 30vh; background: #9db5d5">
+        <div class="col-3">
+            <div class="d-flex flex-column align-items-start">
+                <label for="exposureSlider" class="form-label">Exposure (ms): <span id="exposureValue">500</span></label>
+                <input type="range" class="form-range" id="exposureSlider" min="100" max="1000" value="500" step="100" onchange="updateInputValues()">
+            </div>
+            <div class="d-flex flex-column align-items-start">
+                <label for="trialsSlider" class="form-label">Number of Trials: <span id="trialsValue">10</span></label>
+                <input type="range" class="form-range" id="trialsSlider" min="1" max="10" value="10" step="1" onchange="updateInputValues()">
+            </div>
+            <div class="col">
+                <div class="d-flex flex-column align-items-start">
+                    <label for="elementsSlider" class="form-label">Number of Elements: <span id="elementsValue">50</span></label>
+                    <input type="range" class="form-range" id="elementsSlider" min="10" max="100" value="50" step="5" onchange="updateInputValues()">
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+        <div class="col-2">
+            <h5>Category</h5>
+            <div class="d-flex flex-column align-items-start">
+                <label class="form-label">Shape</label>
+                <label class="form-label">Color</label>
+                <label class="form-label">Rotation (<span id="targetRotationValue"></span>° vs. <span id="distractorRotationValue"></span>°)</label>
+                <label class="form-label">Size (<span id="targetSizeValue"></span>px vs. <span id="distractorSizeValue"></span>px)</label>
+            </div>
+        </div>
+        <div class="col-3">
+            <h5>Target</h5>
+            <div class="d-flex flex-column align-items-start">
+                <select id="targetShapePicker" class="form-select" onchange="updateInputValues()">
+                    <option value="Circle">Circle</option>
+                    <option value="Square">Square</option>
+                    <option value="Triangle">Triangle</option>
+                    <option value="Diamond">Diamond</option>
+                    <option value="Cross">Cross</option>
+                    <option value="Star">Star</option>
+                </select>
+
+                <!-- Centering the color picker horizontally -->
+                <input type="color" id="targetColorPicker" value="#d8b365"
+                       class="mt-2 align-self-center"
+                       onchange="updateInputValues()"
+                       style="border: thin solid black; padding: 0; margin: 0;">
+
+                <input type="range" class="form-range mt-2" id="targetRotationSlider" min="0" max="360" value="0" step="10" onchange="updateInputValues()">
+                <input type="range" class="form-range mt-2" id="targetSizeSlider" min="10" max="50" value="30" step="5" onchange="updateInputValues()">
+            </div>
+
+        </div>
+        <div class="col-3">
+            <h5>Distractor</h5>
+            <div class="d-flex flex-column align-items-start">
+                <select id="distractorShapePicker" class="form-select" onchange="updateInputValues()">
+                    <option value="Circle">Circle</option>
+                    <option value="Square">Square</option>
+                    <option value="Triangle">Triangle</option>
+                    <option value="Diamond">Diamond</option>
+                    <option value="Cross">Cross</option>
+                    <option value="Star">Star</option>
+                </select>
+                <input type="color" id="distractorColorPicker" value="#5ab4ac"
+                       class="mt-2 align-self-center"
+                       onchange="updateInputValues()"
+                       style="border: thin solid black; padding: 0; margin: 0;">
+                <input type="range" class="form-range mt-2" id="distractorRotationSlider" min="0" max="360" value="0" step="10" onchange="updateInputValues()">
+                <input type="range" class="form-range mt-2" id="distractorSizeSlider" min="10" max="50" value="30" step="5" onchange="updateInputValues()">
+            </div>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary" onclick="runTrial()">Run Trial</button>
+        </div>
+        <div class="col-6">
+            <button class="btn btn-primary" onclick="storeResults()">Download as CSV</button>
+        </div>
+    </div>
+
+
+    <div class="row" style="height: 58vh;">
+        <div class="col-7">
+            <div class="row" id="mainVisContainer" style="height: 58vh"></div>
+        </div>
+        <div class="col-5" style="border-left: 1px solid lightsteelblue;">
+            <div class="row" id="resultsMatrixVisContainer" style="height: 58vh; overflow-y: scroll">
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://d3js.org/d3.v7.min.js"></script>
+<script src="js/Experiment.js"></script>
+<script src="js/ResultsMatrix.js"></script>
+<script src="data/historicalData.js"></script>
+<script src="js/helpers.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>
