@@ -22,6 +22,7 @@ Please fill out the pre-reading quiz on Quercus at the beginning of class!
 ### Prerequisites
 
 - You have read and **programmed** along with chapter 7 and 8 in *D3 - Interactive Data Visualization for the Web*.
+- You have downloaded the template for this week's lab. [(Download here)](https://cnobre.github.io/W25-CSC316H/week-04/lab/week-04_lab_template.zip)
 
 
 Last week you created your first D3 visualizations. You added content to the DOM, mapped datasets to visual elements on the webpage and defined dynamic, data-dependent properties. 
