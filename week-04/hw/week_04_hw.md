@@ -259,7 +259,7 @@ Use the following recommended folder structure & create a single .zip file:
 		index.html
 		
     class_activity/
-    	[either pdf or link to gdrive that contains your running doc with class activities]
+    	[pdf of your class activities]
     	[latest Tableau workbook (either added here separately or within the gdrive)]
     	
     dear_data/ (optionl)
