@@ -494,12 +494,8 @@ Please submit your completed lab together with this week's homework until next T
 		css/ 		
 		js/ 
 		index.html
-		
-    class_activity/
-    	[either pdf or link to gdrive that contains your running doc with class activities]
-    	[latest Tableau workbook (either added here separately or within the gdrive)]
     	
-    dear_data/ (optionl)
+    dear_data/ (optional)
         [picture or spreadhseet with data]
 		
 ```
