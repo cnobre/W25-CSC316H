@@ -7,9 +7,6 @@ exclude: true
 
 # Week 05 | Lab
 
-### Pre-Reading Quiz
-Please fill out the pre-reading quiz on Quercus *before* the beginning of class!
-
 ### Learning Objectives
 
 - Learn the D3 update pattern (enter, update, exit)
