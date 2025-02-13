@@ -44,7 +44,7 @@ If you are interested in the study you can get the paper here:
 
 To help you get started with this homework assignment we have prepared a template that you can use. It is based on the front-end framework *Bootstrap* and it includes the JS libraries: *D3* and *jQuery*. Furthermore, a CSV file (```household_charateristics.csv```) is stored in the folder *"data"*. Of course, you can also start with an empty project and just copy the dataset.
 
-[Template.zip](https://cnobre.github.io/W25-CSC316H/week-06/hw/Template.zip)
+[Template.zip](https://cnobre.github.io/W25-CSC316H/week-06/hw/week-06-hw-template.zip)
 
 
 ### Overview
