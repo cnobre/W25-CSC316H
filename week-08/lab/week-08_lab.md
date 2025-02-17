@@ -3,7 +3,7 @@ layout: labold
 exclude: true
 --->
 
-# Week 08 | Lab
+# Week 07 | Lab
 
 ### Pre-Reading Quiz
 Please fill out the pre-reading quiz on Quercus *before* the beginning of class!
