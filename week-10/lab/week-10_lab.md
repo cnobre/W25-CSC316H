@@ -6,7 +6,7 @@ exclude: true
 
 &nbsp;
 
-# Week 10 Lab
+# Week 9 Lab
 
 ### Pre-Reading Quiz
 On Quercus!
