@@ -55,10 +55,6 @@ You will first learn about Tableau dashboards and then design your dashboard. Yo
   * Who is the audience?
   * What are the questions your dashboard is trying to answer?
   * Explore the data using your dashboard and write down **at least three insights** you got. Be specific, i.e., what visualizations or interactions led to those insights? Include screenshots to corroborate your insights. 
-
-## 2) Final Project 
-
-The project phase of the year is about to start & we will address the logistics of the final projects in great detail during Thursday's lecture. For this week, your only task is to fill out the form provided on Quercus in the `Final Project` module.
   
 
 ## 3) Submit Homework in Quercus
