@@ -5,7 +5,7 @@ exclude: true
 
 &nbsp;
 
-# Week 09 | Lab
+# Week 08 | Lab
 
 ### Learning Objectives
 

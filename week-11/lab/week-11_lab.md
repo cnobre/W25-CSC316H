@@ -5,7 +5,7 @@ exclude: true
 
 &nbsp;
 
-# Week 11 Lab
+# Week 10 Lab
 
 ### Pre-Reading Quiz
 Please fill out the pre-reading quiz on Quercus at the beginning of class!
